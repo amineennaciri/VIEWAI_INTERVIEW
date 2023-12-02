@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './DisplayData.css'
 
-function DisplayData({dataFromAPI}){
+function DisplayData({data}){
 
     return (
         <>
@@ -20,7 +20,7 @@ function DisplayData({dataFromAPI}){
                   <th>latitude</th>
                   <th>longitude</th>
                 </tr>
-                {dataFromAPI.map((el,index)=>(
+                {data.map((el,index)=>(
                     <tr key={index}>
                         <td>{el.location.city}</td>
                         <td>{el.location.state}</td>
